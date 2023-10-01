@@ -1,0 +1,33 @@
+﻿using System.Collections.Generic;
+using UnityEngine.UI;
+using UnityEngine;
+using GameCore;
+
+namespace HotLogic
+{
+    public class #SCRIPTNAME# : BaseView
+    {        
+        #region Key
+        
+#KEY#
+
+        #endregion
+
+        #region Component
+        
+#COMPONENT#
+
+        #endregion
+                
+        public override void GetObjects(UIAbstractViewObject mScript)
+        {
+            base.GetObjects(mScript);
+            var objName = new HashSet<string>
+            {
+#KEYSET#
+            };
+
+#FINDCOMPONENT#
+        }
+    }
+}

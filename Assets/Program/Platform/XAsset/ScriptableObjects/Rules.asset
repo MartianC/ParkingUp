@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03142c330ced64e0ab46cddcd0484ab7, type: 3}
+  m_Name: Rules
+  m_EditorClassIdentifier: 
+  version: 1
+  scenesInBuild: []
+  rules:
+  - searchPath: Assets/HotUpdateResources/Controller
+    searchPattern: '*.controller'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/HotUpdateResources/Dll
+    searchPattern: '*.txt,*.bytes,*.json,*.csv,*.xml,*htm,*.html,*.yaml,*.fnt'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/HotUpdateResources/Material
+    searchPattern: '*.mat'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/HotUpdateResources/Other
+    searchPattern: '*'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/HotUpdateResources/Prefab
+    searchPattern: '*.prefab'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/HotUpdateResources/Scene
+    searchPattern: '*.unity'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/HotUpdateResources/ScriptableObject
+    searchPattern: '*.asset'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/HotUpdateResources/TextAsset
+    searchPattern: '*.txt,*.bytes,*.json,*.csv,*.xml,*htm,*.html,*.yaml,*.fnt'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/HotUpdateResources/UI
+    searchPattern: '*.png'
+    nameBy: 2
+    assetBundleName: 
+  ruleAssets:
+  - bundle: assets/hotupdateresources/dll/hotupdatescripts.dll.bytes.unity3d
+    path: Assets/HotUpdateResources/Dll/HotUpdateScripts.dll.bytes
+  - bundle: assets/hotupdateresources/dll/hotupdatescripts.pdb.bytes.unity3d
+    path: Assets/HotUpdateResources/Dll/HotUpdateScripts.pdb.bytes
+  - bundle: assets/hotupdateresources/scene/login.unity.unity3d
+    path: Assets/HotUpdateResources/Scene/Login.unity
+  ruleBundles:
+  - name: assets/hotupdateresources/dll/hotupdatescripts.dll.bytes.unity3d
+    assets:
+    - Assets/HotUpdateResources/Dll/HotUpdateScripts.dll.bytes
+  - name: assets/hotupdateresources/dll/hotupdatescripts.pdb.bytes.unity3d
+    assets:
+    - Assets/HotUpdateResources/Dll/HotUpdateScripts.pdb.bytes
+  - name: assets/hotupdateresources/scene/login.unity.unity3d
+    assets:
+    - Assets/HotUpdateResources/Scene/Login.unity
